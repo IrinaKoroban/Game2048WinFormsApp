@@ -459,8 +459,8 @@ namespace Game2048WinFormsApp
 
         private void правилаИгрыToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var userResultsForm = new UserResultsForm();
-            userResultsForm.Show();
+            var gameRulesForm= new GameRulesForm();
+            gameRulesForm.Show();
         }
 
         private void начатьСНачалаToolStripMenuItem_Click(object sender, EventArgs e)
