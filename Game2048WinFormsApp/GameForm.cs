@@ -11,9 +11,9 @@ namespace Game2048WinFormsApp
         User user;
 
         private int mapSize;
-        private int labelSize = 80;
+        private int labelSize = 100;
         private int startX = 25;
-        private int startY = 130;
+        private int startY = 150;
         private int gapBetweenCells = 8;
         private int backLabelShift = 10;
         private int score = 0;
@@ -34,6 +34,9 @@ namespace Game2048WinFormsApp
 
         private void GameForm_Load(object sender, EventArgs e)
         {
+            this.AutoSize = true;
+            this.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+
             user = new User(userName);
             InitMap();
             GenerateNumber();

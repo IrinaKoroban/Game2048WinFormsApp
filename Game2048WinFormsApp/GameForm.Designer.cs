@@ -28,121 +28,118 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.menuStrip = new System.Windows.Forms.MenuStrip();
-            this.файлToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.правилаИгрыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.начатьСНачалаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.выходToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.результатыИгрыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.показатьРезультатыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.scoreLabel = new System.Windows.Forms.Label();
-            this.bestScoreLabel = new System.Windows.Forms.Label();
-            this.menuStrip.SuspendLayout();
-            this.SuspendLayout();
+            menuStrip = new MenuStrip();
+            файлToolStripMenuItem = new ToolStripMenuItem();
+            правилаИгрыToolStripMenuItem = new ToolStripMenuItem();
+            начатьСНачалаToolStripMenuItem = new ToolStripMenuItem();
+            выходToolStripMenuItem = new ToolStripMenuItem();
+            результатыИгрыToolStripMenuItem = new ToolStripMenuItem();
+            показатьРезультатыToolStripMenuItem = new ToolStripMenuItem();
+            scoreLabel = new Label();
+            bestScoreLabel = new Label();
+            menuStrip.SuspendLayout();
+            SuspendLayout();
             // 
             // menuStrip
             // 
-            this.menuStrip.Font = new System.Drawing.Font("Consolas", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.menuStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.файлToolStripMenuItem,
-            this.результатыИгрыToolStripMenuItem});
-            this.menuStrip.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(394, 30);
-            this.menuStrip.TabIndex = 0;
-            this.menuStrip.Text = "menuStrip1";
+            menuStrip.Font = new Font("Consolas", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
+            menuStrip.ImageScalingSize = new Size(20, 20);
+            menuStrip.Items.AddRange(new ToolStripItem[] { файлToolStripMenuItem, результатыИгрыToolStripMenuItem });
+            menuStrip.Location = new Point(0, 0);
+            menuStrip.Name = "menuStrip";
+            menuStrip.Padding = new Padding(9, 3, 0, 3);
+            menuStrip.Size = new Size(731, 41);
+            menuStrip.TabIndex = 0;
+            menuStrip.Text = "menuStrip1";
             // 
             // файлToolStripMenuItem
             // 
-            this.файлToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.правилаИгрыToolStripMenuItem,
-            this.начатьСНачалаToolStripMenuItem,
-            this.выходToolStripMenuItem});
-            this.файлToolStripMenuItem.Name = "файлToolStripMenuItem";
-            this.файлToolStripMenuItem.Size = new System.Drawing.Size(64, 26);
-            this.файлToolStripMenuItem.Text = "Файл";
+            файлToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { правилаИгрыToolStripMenuItem, начатьСНачалаToolStripMenuItem, выходToolStripMenuItem });
+            файлToolStripMenuItem.Name = "файлToolStripMenuItem";
+            файлToolStripMenuItem.Size = new Size(88, 35);
+            файлToolStripMenuItem.Text = "Файл";
             // 
             // правилаИгрыToolStripMenuItem
             // 
-            this.правилаИгрыToolStripMenuItem.Name = "правилаИгрыToolStripMenuItem";
-            this.правилаИгрыToolStripMenuItem.Size = new System.Drawing.Size(244, 26);
-            this.правилаИгрыToolStripMenuItem.Text = "Правила игры";
-            this.правилаИгрыToolStripMenuItem.Click += new System.EventHandler(this.правилаИгрыToolStripMenuItem_Click);
+            правилаИгрыToolStripMenuItem.Name = "правилаИгрыToolStripMenuItem";
+            правилаИгрыToolStripMenuItem.Size = new Size(343, 40);
+            правилаИгрыToolStripMenuItem.Text = "Правила игры";
+            правилаИгрыToolStripMenuItem.Click += правилаИгрыToolStripMenuItem_Click;
             // 
             // начатьСНачалаToolStripMenuItem
             // 
-            this.начатьСНачалаToolStripMenuItem.Name = "начатьСНачалаToolStripMenuItem";
-            this.начатьСНачалаToolStripMenuItem.Size = new System.Drawing.Size(244, 26);
-            this.начатьСНачалаToolStripMenuItem.Text = "Начать с начала";
-            this.начатьСНачалаToolStripMenuItem.Click += new System.EventHandler(this.начатьСНачалаToolStripMenuItem_Click);
+            начатьСНачалаToolStripMenuItem.Name = "начатьСНачалаToolStripMenuItem";
+            начатьСНачалаToolStripMenuItem.Size = new Size(343, 40);
+            начатьСНачалаToolStripMenuItem.Text = "Начать с начала";
+            начатьСНачалаToolStripMenuItem.Click += начатьСНачалаToolStripMenuItem_Click;
             // 
             // выходToolStripMenuItem
             // 
-            this.выходToolStripMenuItem.Name = "выходToolStripMenuItem";
-            this.выходToolStripMenuItem.Size = new System.Drawing.Size(244, 26);
-            this.выходToolStripMenuItem.Text = "Выход";
-            this.выходToolStripMenuItem.Click += new System.EventHandler(this.выходToolStripMenuItem_Click);
+            выходToolStripMenuItem.Name = "выходToolStripMenuItem";
+            выходToolStripMenuItem.Size = new Size(343, 40);
+            выходToolStripMenuItem.Text = "Выход";
+            выходToolStripMenuItem.Click += выходToolStripMenuItem_Click;
             // 
             // результатыИгрыToolStripMenuItem
             // 
-            this.результатыИгрыToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.показатьРезультатыToolStripMenuItem});
-            this.результатыИгрыToolStripMenuItem.Name = "результатыИгрыToolStripMenuItem";
-            this.результатыИгрыToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
-            this.результатыИгрыToolStripMenuItem.Text = "Результаты игры";
+            результатыИгрыToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { показатьРезультатыToolStripMenuItem });
+            результатыИгрыToolStripMenuItem.Name = "результатыИгрыToolStripMenuItem";
+            результатыИгрыToolStripMenuItem.Size = new Size(242, 35);
+            результатыИгрыToolStripMenuItem.Text = "Результаты игры";
             // 
             // показатьРезультатыToolStripMenuItem
             // 
-            this.показатьРезультатыToolStripMenuItem.Name = "показатьРезультатыToolStripMenuItem";
-            this.показатьРезультатыToolStripMenuItem.Size = new System.Drawing.Size(284, 26);
-            this.показатьРезультатыToolStripMenuItem.Text = "Показать результаты";
-            this.показатьРезультатыToolStripMenuItem.Click += new System.EventHandler(this.показатьРезультатыToolStripMenuItem_Click);
+            показатьРезультатыToolStripMenuItem.Name = "показатьРезультатыToolStripMenuItem";
+            показатьРезультатыToolStripMenuItem.Size = new Size(399, 40);
+            показатьРезультатыToolStripMenuItem.Text = "Показать результаты";
+            показатьРезультатыToolStripMenuItem.Click += показатьРезультатыToolStripMenuItem_Click;
             // 
             // scoreLabel
             // 
-            this.scoreLabel.BackColor = System.Drawing.Color.RosyBrown;
-            this.scoreLabel.Font = new System.Drawing.Font("Consolas", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.scoreLabel.ForeColor = System.Drawing.Color.White;
-            this.scoreLabel.Location = new System.Drawing.Point(15, 56);
-            this.scoreLabel.Name = "scoreLabel";
-            this.scoreLabel.Size = new System.Drawing.Size(118, 55);
-            this.scoreLabel.TabIndex = 1;
-            this.scoreLabel.Text = "Счет";
-            this.scoreLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            scoreLabel.BackColor = Color.RosyBrown;
+            scoreLabel.Font = new Font("Consolas", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            scoreLabel.ForeColor = Color.White;
+            scoreLabel.Location = new Point(13, 41);
+            scoreLabel.Margin = new Padding(4, 0, 4, 0);
+            scoreLabel.Name = "scoreLabel";
+            scoreLabel.Size = new Size(177, 82);
+            scoreLabel.TabIndex = 1;
+            scoreLabel.Text = "Счет";
+            scoreLabel.TextAlign = ContentAlignment.TopCenter;
             // 
             // bestScoreLabel
             // 
-            this.bestScoreLabel.BackColor = System.Drawing.Color.RosyBrown;
-            this.bestScoreLabel.Font = new System.Drawing.Font("Consolas", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.bestScoreLabel.ForeColor = System.Drawing.Color.White;
-            this.bestScoreLabel.Location = new System.Drawing.Point(158, 56);
-            this.bestScoreLabel.Name = "bestScoreLabel";
-            this.bestScoreLabel.Size = new System.Drawing.Size(167, 55);
-            this.bestScoreLabel.TabIndex = 2;
-            this.bestScoreLabel.Text = "Лучший счет";
-            this.bestScoreLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            bestScoreLabel.BackColor = Color.RosyBrown;
+            bestScoreLabel.Font = new Font("Consolas", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            bestScoreLabel.ForeColor = Color.White;
+            bestScoreLabel.Location = new Point(210, 41);
+            bestScoreLabel.Margin = new Padding(4, 0, 4, 0);
+            bestScoreLabel.Name = "bestScoreLabel";
+            bestScoreLabel.Size = new Size(250, 82);
+            bestScoreLabel.TabIndex = 2;
+            bestScoreLabel.Text = "Лучший счет";
+            bestScoreLabel.TextAlign = ContentAlignment.TopCenter;
             // 
             // GameForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(394, 491);
-            this.Controls.Add(this.bestScoreLabel);
-            this.Controls.Add(this.scoreLabel);
-            this.Controls.Add(this.menuStrip);
-            this.MainMenuStrip = this.menuStrip;
-            this.Name = "GameForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "GameForm";
-            this.Load += new System.EventHandler(this.GameForm_Load);
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.GameForm_KeyDown);
-            this.menuStrip.ResumeLayout(false);
-            this.menuStrip.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(12F, 30F);
+            AutoScaleMode = AutoScaleMode.Font;
+            AutoSize = true;
+            ClientSize = new Size(731, 831);
+            Controls.Add(bestScoreLabel);
+            Controls.Add(scoreLabel);
+            Controls.Add(menuStrip);
+            MainMenuStrip = menuStrip;
+            Margin = new Padding(4, 4, 4, 4);
+            Name = "GameForm";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "GameForm";
+            Load += GameForm_Load;
+            KeyDown += GameForm_KeyDown;
+            menuStrip.ResumeLayout(false);
+            menuStrip.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
